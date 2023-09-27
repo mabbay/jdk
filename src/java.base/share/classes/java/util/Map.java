@@ -183,7 +183,7 @@ public interface Map<K, V> {
      * Returns {@code true} if this map contains a mapping for the specified
      * key.  More formally, returns {@code true} if and only if
      * this map contains a mapping for a key {@code k} such that
-     * {@code Objects.equals(key, k)}.  (There can be
+     * {@link Objects#equals Objects.equals(key, k)}.  (There can be
      * at most one such mapping.)
      *
      * @param key key whose presence in this map is to be tested
@@ -200,7 +200,7 @@ public interface Map<K, V> {
      * Returns {@code true} if this map maps one or more keys to the
      * specified value.  More formally, returns {@code true} if and only if
      * this map contains at least one mapping to a value {@code v} such that
-     * {@code Objects.equals(value, v)}.  This operation
+     * {@link Objects#equals Objects.equals(key, k)}.  This operation
      * will probably require time linear in the map size for most
      * implementations of the {@code Map} interface.
      *
@@ -220,7 +220,7 @@ public interface Map<K, V> {
      *
      * <p>More formally, if this map contains a mapping from a key
      * {@code k} to a value {@code v} such that
-     * {@code Objects.equals(key, k)},
+     * {@link Objects#equals Objects.equals(key, k)},
      * then this method returns {@code v}; otherwise
      * it returns {@code null}.  (There can be at most one such mapping.)
      *
@@ -272,7 +272,7 @@ public interface Map<K, V> {
      * Removes the mapping for a key from this map if it is present
      * (optional operation).   More formally, if this map contains a mapping
      * from key {@code k} to value {@code v} such that
-     * {@code Objects.equals(key, k)}, that mapping
+     * {@link Objects#equals Objects.equals(key, k)}, that mapping
      * is removed.  (The map can contain at most one such mapping.)
      *
      * <p>Returns the value to which this map previously associated the key,
